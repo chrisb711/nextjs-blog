@@ -50,3 +50,17 @@
 .lightText {
   color: #666;
 }
+
+.anchorNav {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.anchorNav .navItem {
+    margin: 10px 30px;
+}
+
+.sectionElement {
+    padding-bottom: 500px;
+}

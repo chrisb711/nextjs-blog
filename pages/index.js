@@ -21,10 +21,10 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <p>My Self Introduction</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          This is a sample website - you’ll be building a site like this on{' '}
+          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.
         </p>
       </section>
 
@@ -43,6 +43,30 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
 
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <div className={utilStyles.anchorNav}>
+            <Link href="#anchor-1" className={utilStyles.navItem}>
+                Anchor 1 #
+            </Link>
+            <Link href="#anchor-2" className={utilStyles.navItem}>
+                Anchor 2 #
+            </Link>
+            <Link href="#anchor-3" className={utilStyles.navItem}>
+                Anchor 3 #
+            </Link>
+        </div>
+
+
+        <div className={utilStyles.sectionElement} id="anchor-1">
+            anchor 1
+        </div>
+        <div className={utilStyles.sectionElement} id="anchor-2">
+            anchor 2
+        </div>
+        <div className={utilStyles.sectionElement} id="anchor-3">
+            anchor 3
+        </div>
+      </section>
     </Layout>
   );
 }
