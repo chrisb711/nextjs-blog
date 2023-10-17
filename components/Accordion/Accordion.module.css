@@ -1,0 +1,35 @@
+.accordion {
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.accordion .accordionItem {
+    text-align: left;
+}
+
+.accordion .accordionItemContent {
+    background-color: yellow;
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.accordion .accordionItemHeader{
+    background-color: #ff00ff;
+    padding-left: 30px;
+}
+
+.accordion .active.accordionItem .accordionItemHeader{
+    background-color: #00ffff;
+    transition: all .8s ease 0s;
+
+}
+
+.accordion .active.accordionItem .accordionItemContent{
+    background-color: #00ff00;
+    max-height: 1500px;
+    transition: all 1.8s ease 0s;
+}

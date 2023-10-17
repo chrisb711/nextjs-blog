@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import Accordion from '../components/Accordion/Accordion';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -61,12 +62,16 @@ export default function Home({ allPostsData }) {
             anchor 1
         </div>
         <div className={utilStyles.sectionElement} id="anchor-2">
-            anchor 2
+            anchor 2<br/><br/>
+            <Accordion title="Titel" />
         </div>
         <div className={utilStyles.sectionElement} id="anchor-3">
             anchor 3
         </div>
       </section>
+
+
+
     </Layout>
   );
 }
