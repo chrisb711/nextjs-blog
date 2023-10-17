@@ -47,13 +47,13 @@ export default function Home({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={utilStyles.anchorNav}>
             <Link href="#anchor-1" className={utilStyles.navItem}>
-                Anchor 1 #
+                Anchor 1
             </Link>
             <Link href="#anchor-2" className={utilStyles.navItem}>
-                Anchor 2 #
+                Anchor 2 (accordion)
             </Link>
             <Link href="#anchor-3" className={utilStyles.navItem}>
-                Anchor 3 #
+                Anchor 3
             </Link>
         </div>
 
@@ -62,7 +62,7 @@ export default function Home({ allPostsData }) {
             anchor 1
         </div>
         <div className={utilStyles.sectionElement} id="anchor-2">
-            anchor 2<br/><br/>
+            anchor 2 (accordion)<br/><br/>
             <Accordion title="Titel" />
         </div>
         <div className={utilStyles.sectionElement} id="anchor-3">

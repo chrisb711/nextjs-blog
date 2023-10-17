@@ -8,10 +8,14 @@ export default function Accordion({title}) {
         var accContainer = e.target.parentNode.parentNode;
         var allHeaders = accContainer.querySelectorAll("[class*=accordionItem]");
 
-        allHeaders.forEach(function(element) {
-            element.classList.remove(styles.active);
-        });
-        accContainerItem.classList.add(styles.active);
+        if(accContainerItem.classList.contains(styles.active)){
+            accContainerItem.classList.remove(styles.active);
+        } else {
+            allHeaders.forEach(function(element) {
+                element.classList.remove(styles.active);
+            });
+            accContainerItem.classList.add(styles.active);
+        }
     }
 
     return <div className={styles.accordion}>My wonderfull Accordion

@@ -15,6 +15,7 @@
     max-height: 0;
     overflow: hidden;
     padding-left: 30px;
+    transition: all .3s ease 0s;
 }
 
 .accordion .accordionItemHeader{
@@ -24,12 +25,11 @@
 
 .accordion .active.accordionItem .accordionItemHeader{
     background-color: #00ffff;
-    transition: all .8s ease 0s;
-
+    font-weight: bold;
 }
 
 .accordion .active.accordionItem .accordionItemContent{
     background-color: #00ff00;
-    max-height: 1500px;
-    transition: all 1.8s ease 0s;
+    max-height: 2000px;
+    transition: all .9s ease 0s;
 }
