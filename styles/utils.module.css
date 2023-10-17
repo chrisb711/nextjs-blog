@@ -58,6 +58,10 @@
     gap: 30px;
 }
 
+.section {
+    margin-bottom: 150px;
+}
+
 .sectionElement {
     padding-bottom: 500px;
 }

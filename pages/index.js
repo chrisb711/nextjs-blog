@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.section} ${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -44,7 +44,8 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.section} ${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        Anchornavigation (css only)<br/><br/>
         <div className={utilStyles.anchorNav}>
             <Link href="#anchor-1" className={utilStyles.navItem}>
                 Anchor 1
@@ -57,22 +58,18 @@ export default function Home({ allPostsData }) {
             </Link>
         </div>
 
-
         <div className={utilStyles.sectionElement} id="anchor-1">
-            anchor 1
+            #anchor 1
         </div>
         <div className={utilStyles.sectionElement} id="anchor-2">
-            anchor 2 (accordion)<br/><br/>
+            #anchor 2 (accordion)<br/><br/>
             <Accordion title="Titel" />
         </div>
         <div className={utilStyles.sectionElement} id="anchor-3">
-            anchor 3
+            #anchor 3<br/><br/>
             <Accordion title="Titel2" />
         </div>
       </section>
-
-
-
     </Layout>
   );
 }
