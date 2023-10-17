@@ -53,7 +53,7 @@ export default function Home({ allPostsData }) {
                 Anchor 2 (accordion)
             </Link>
             <Link href="#anchor-3" className={utilStyles.navItem}>
-                Anchor 3
+                Anchor 3 (accordion)
             </Link>
         </div>
 
@@ -67,6 +67,7 @@ export default function Home({ allPostsData }) {
         </div>
         <div className={utilStyles.sectionElement} id="anchor-3">
             anchor 3
+            <Accordion title="Titel2" />
         </div>
       </section>
 

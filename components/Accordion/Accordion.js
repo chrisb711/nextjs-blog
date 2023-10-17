@@ -18,7 +18,7 @@ export default function Accordion({title}) {
         }
     }
 
-    return <div className={styles.accordion}>My wonderfull Accordion
+    return <div className={styles.accordion}>My wonderfull Accordion {title}
                 <div className={styles.accordionItem}>
                     <div className={styles.accordionItemHeader} onClick={animateAccordionEntries}>
                         head1
